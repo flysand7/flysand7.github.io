@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input, button,
+textarea, select {
+  font: inherit;
+}
+textarea:not([rows]) {
+  min-height: 10em;
+}
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*---------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "noto-serif";
+    font-weight: 0 200;
+    unicode-range: U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+    src: url("/fonts/NotoSerifJP-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "noto-serif";
+    font-weight: 201 300;
+    unicode-range: U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+    src: url("/fonts/NotoSerifJP-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "noto-serif";
+    font-weight: 301 500;
+    unicode-range: U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+    src: url("/fonts/NotoSerifJP-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "noto-serif";
+    font-weight: 501 600;
+    unicode-range: U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+    src: url("/fonts/NotoSerifJP-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "noto-serif";
+    font-weight: 601 1000;
+    unicode-range: U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+    src: url("/fonts/NotoSerifJP-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "pt-serif";
+    font-style: normal;
+    font-weight: 100 600;
+    src: url("/fonts/PTSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "pt-serif";
+    font-style: italic;
+    font-weight: 100 600;
+    src: url("/fonts/PTSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "pt-serif";
+    font-weight: 601 1000;
+    src: url("/fonts/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pt-serif";
+    font-style: italic;
+    font-weight: 601 1000;
+    src: url("/fonts/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    font-weight: 0 300;
+    src: url('/fonts/Inconsolata-Light.ttf');
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    font-weight: 301 400;
+    src: url('/fonts/Inconsolata-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'inconsolata';
+    font-weight: 401 500;
+    src: url('/fonts/Inconsolata-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    font-weight: 501 600;
+    src: url('/fonts/Inconsolata-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    font-weight: 601 1000;
+    src: url('/fonts/Inconsolata-Bold.ttf');
+}
+
+body {
+    font-family: 'noto-serif', 'pt-serif', 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+code {
+    font-family: 'inconsolata', 'Consolas', monospace;
+    text-wrap: nowrap;
+}
+
+pre:has(code) {
+    padding: 10px 10px 10px 4ch;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #f97b72 #f8f8f8;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.30rem;
+    margin-bottom: 42px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.82rem;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.439rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.138rem;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+a:not([class]) {
+    color: #eb4034;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e88746;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    font-variant-numeric: oldstyle-nums;
+}
+
+.content {
+    width: 80ch;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+::selection {
+    background-color: #ffd17a;
+}
