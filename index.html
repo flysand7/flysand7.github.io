@@ -8,41 +8,26 @@
     </head>
     <body>
         <div class="content">
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
+            <h1>Flysand7's website</h1>
             <p>
-                    Тест русского текста
-                    社会の各個人及び各機関が、<i>この世界人</i>権宣言を常に念頭に置きながら、加盟国自身の人民の間にも、また、加盟国の管轄下にある地域の人民の間にも
+                Hi! I like low-level development, tinkering with systems and developing tooling
+                to enhance developer experiences.
             </p>
             <p>
-            Some monospace code: <code>fmt.println("Hellope")</code>, that thing should print something along the lines of 1234.
+                Some of my projects:
             </p>
-            <p>
-                    Тест русского текста
-                    社会の各個人及び各機関が、<i>この世界人</i>権宣言を常に念頭に置きながら、加盟国自身の人民の間にも、また、加盟国の管轄下にある地域の人民の間にも
-            </p>
-            <p>Если интересно, больше можно узнать по <a href="#">Ссылке</a></p>
-            <pre><code>package main
-
-import "core:fmt"
-import "core:os"
-
-main :: proc() {
-    fmt.println("Hellope")
-    asdsdamksldmlkasmdlaksmdlkasmdlkadmlksdmalksmdlkasmdlkasmdlkamsdlkmasldkmalskdmalksmdlksamdlkdmsalkdasdjmalskdmalksdmlksadmlksmdlkasmd
-    os.exit(1)
-}</code></pre>
-            <p>
-                Список вещей которые нужно сделать:
-            </p>
-            <ol>
-                <li>Создать проект</li>
-                <li>Собрать прототип</li>
-                <li>Протестировать прототип</li>
-                <li>Сделать финальную версию</li>
-            </ol>
+            <h2><a href="https://github.com/flysand7/bake">bake</a> - an imperative build system</h2>
+            An imperative build system with caching. Simpler than <code>make</code>, more versatile than
+            <code>just</code>. Allows writing a build script using a set of ordered instructions as opposed
+            to a set of rules, enhancing the experience of using a build script as opposed to
+            writing shell scripts.
+            <img src="/images/bake-screenshot.png" />
+            <h2><a href="https://github.com/flysand7/x86-disasm">x86-disasm</a> - an x86 disassembler</h2>
+            Tiny, parallelizable and embeddable x86 disassembler supporting all general purpose, SSE, SSE2, SSE3,
+            SSSE3, SSE4.1, SSE4.2, AVX and some AVX2 instructions. Includes a fully-functional CLI tool
+            including features such as printing in either Intel or adapted AT&T syntax.
+            <img src="/images/x86-disasm-screenshot.png" />
+            Performs 10x as fast as objdump, or nasm which are the two most known disassemblers to date.
         </div>
     </body>
 </html>
